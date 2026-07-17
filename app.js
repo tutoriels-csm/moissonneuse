@@ -1,5 +1,13 @@
 // ==================== Logique d'Application ====================
 
+// Mappage des catégories avec leurs icônes
+const categoryIcons = {
+    "Chargement produits, gestion des favoris": "icons/loading.svg",
+    "Calibration des capteurs": "icons/calibration.svg",
+    "Réglages de la coupe": "icons/cutting.svg",
+    "Utilisation des outils d'assistance à la conduite": "icons/navigation.svg"
+};
+
 document.addEventListener('DOMContentLoaded', function() {
     displayCategories();
     setupModalHandler();
@@ -74,12 +82,16 @@ function displayCategories() {
     
     categories.forEach(category => {
         const count = tutorials.filter(t => t.category === category).length;
+        const iconPath = categoryIcons[category] || "icons/default.svg";
         
         const categoryCard = document.createElement('div');
         categoryCard.className = 'category-card';
         categoryCard.onclick = () => filterByCategory(category);
         
         categoryCard.innerHTML = `
+            <div class="category-icon">
+                <img src="${iconPath}" alt="${category}" loading="lazy">
+            </div>
             <h3>${category}</h3>
             <span class="category-count">${count} tutoriels</span>
             <p style="margin-top: 1rem; cursor: pointer;">Voir →</p>
