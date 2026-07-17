@@ -309,6 +309,7 @@ body {
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
     border-left: 4px solid transparent;
+    cursor: pointer;
 }
 
 .tutorial-card:hover {
@@ -325,8 +326,7 @@ body {
     overflow: hidden;
 }
 
-.tutorial-thumbnail img,
-.tutorial-thumbnail iframe {
+.tutorial-thumbnail img {
     position: absolute;
     top: 0;
     left: 0;
@@ -409,23 +409,71 @@ body {
     font-weight: 500;
 }
 
-.tutorial-link {
-    background: linear-gradient(135deg, var(--claas-red), var(--claas-red-dark));
-    color: var(--white);
-    padding: 8px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+/* ==================== Modal Video ==================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    animation: fadeIn 0.3s ease;
 }
 
-.tutorial-link:hover {
-    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.3);
-    transform: translateY(-2px);
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    animation: slideUp 0.3s ease;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.close-modal {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.close-modal:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: var(--claas-red);
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+
+    .close-modal {
+        top: 10px;
+        right: 10px;
+    }
 }
 
 /* ==================== Footer ==================== */
@@ -467,6 +515,26 @@ body {
     from {
         opacity: 0;
         transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
     }
     to {
         opacity: 1;
@@ -569,5 +637,9 @@ body {
         width: 55px;
         height: 55px;
         font-size: 22px;
+    }
+
+    .modal-content {
+        width: 98%;
     }
 }
