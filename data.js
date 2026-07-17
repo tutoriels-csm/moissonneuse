@@ -5,12 +5,12 @@ const tutorials = [
     // === CONFIGURATION INITIALE ===
     {
         id: 1,
-        title: "1er vol avec le drone",
-        description: "Voici la première vidéo réalisée avec le drone",
+        title: "Chargement d'un produit dans la moissonneuse",
+        description: "Apprenez comment charger correctement un produit dans la moissonneuse CLAAS",
         category: "Configuration Initiale",
-        youtubeId: "7kFJ5Wqr8yw",
+        youtubeId: "yg_vJ1MOdFU",
         duration: "00:00",
-        thumbnail: "https://img.youtube.com/vi/7kFJ5Wqr8yw/hqdefault.jpg"
+        thumbnail: "https://img.youtube.com/vi/yg_vJ1MOdFU/hqdefault.jpg"
     },
     {
         id: 2,
