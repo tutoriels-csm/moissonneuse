@@ -1,11 +1,11 @@
 // ==================== Logique d'Application ====================
 
-// Mappage des catégories avec leurs icônes
+// Mappage des catégories avec leurs icônes CLAAS
 const categoryIcons = {
-    "Chargement produits, gestion des favoris": "icons/loading.svg",
-    "Calibration des capteurs": "icons/calibration.svg",
-    "Réglages de la coupe": "icons/cutting.svg",
-    "Utilisation des outils d'assistance à la conduite": "icons/navigation.svg"
+    "Réglages de la coupe": "icons/harvester.svg",
+    "Utilisation des outils d'assistance à la conduite": "icons/sensor.svg",
+    "Chargement produits, gestion des favoris": "icons/wheat.svg",
+    "Calibration des capteurs": "icons/screwdriver.svg"
 };
 
 document.addEventListener('DOMContentLoaded', function() {
