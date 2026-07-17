@@ -150,12 +150,17 @@ body {
 
 /* ==================== Hero Section ==================== */
 .hero {
-    background: linear-gradient(135deg, var(--claas-red) 0%, var(--claas-red-dark) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('fond.jpg') center/cover no-repeat;
+    background-attachment: fixed;
     color: var(--white);
     padding: 120px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero::before {
@@ -622,6 +627,18 @@ body {
     .nav ul {
         gap: 1.5rem;
     }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -659,6 +676,7 @@ body {
 
     .hero {
         padding: 80px 20px;
+        min-height: 500px;
     }
 
     .hero-content h2 {
@@ -666,7 +684,7 @@ body {
     }
 
     .hero-content p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .section-title {
@@ -716,6 +734,7 @@ body {
 
     .hero {
         padding: 60px 15px;
+        min-height: 400px;
     }
 
     .hero-content h2 {
@@ -723,7 +742,7 @@ body {
     }
 
     .hero-content p {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 
     .section-title {
