@@ -25,30 +25,30 @@ const tutorials = [
     // === CALIBRATION DES CAPTEURS ===
     {
         id: 3,
-        title: "Enregistrement de Vos Machines",
-        description: "Comment enregistrer et configurer vos machines CLAAS dans CEMOS.",
+        title: "Calibration du quantimètre",
+        description: "Apprenez à calibrer correctement le quantimètre de votre moissonneuse CLAAS.",
         category: "Calibration des capteurs",
-        youtubeId: "VOTRE_VIDEO_ID_3",
-        duration: "8:45",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_3/hqdefault.jpg"
+        youtubeId: "OmpPT2jmrA8",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/OmpPT2jmrA8/hqdefault.jpg"
     },
     {
         id: 4,
-        title: "Paramétrage des Capteurs",
-        description: "Configuration détaillée des capteurs et de la télémétrie des machines.",
+        title: "Calibration de capteurs liés à CEMOS Dialog",
+        description: "Configuration et calibration des capteurs intégrés à CEMOS Dialog.",
         category: "Calibration des capteurs",
-        youtubeId: "VOTRE_VIDEO_ID_4",
-        duration: "15:10",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_4/hqdefault.jpg"
+        youtubeId: "j3skWj0wlxo",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/j3skWj0wlxo/hqdefault.jpg"
     },
     {
         id: 5,
-        title: "Synchronisation des Données",
-        description: "Synchronisez vos données entre la machine et la plateforme CEMOS.",
+        title: "Calibration de la Grain Quality Camera",
+        description: "Procédure de calibration de la caméra de qualité de grain.",
         category: "Calibration des capteurs",
-        youtubeId: "VOTRE_VIDEO_ID_5",
-        duration: "7:30",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_5/hqdefault.jpg"
+        youtubeId: "hei91mWOxfY",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/hei91mWOxfY/hqdefault.jpg"
     },
 
     // === RÉGLAGES DE LA COUPE ===
