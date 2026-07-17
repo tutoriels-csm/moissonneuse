@@ -3,7 +3,68 @@
 document.addEventListener('DOMContentLoaded', function() {
     displayCategories();
     displayTutorials();
+    setupModalHandler();
 });
+
+// ==================== Modal Video Player ====================
+function setupModalHandler() {
+    const modal = document.getElementById('videoModal');
+    const closeModal = document.getElementById('closeModal');
+    
+    // Fermer le modal en cliquant le X
+    if (closeModal) {
+        closeModal.addEventListener('click', closeVideoModal);
+    }
+    
+    // Fermer le modal en cliquant en dehors
+    if (modal) {
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeVideoModal();
+            }
+        });
+    }
+    
+    // Fermer avec la touche Echap
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeVideoModal();
+        }
+    });
+}
+
+function openVideoModal(youtubeId, title) {
+    const modal = document.getElementById('videoModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    // Créer l'iframe YouTube
+    const embedUrl = `https://www.youtube.com/embed/${youtubeId}?autoplay=1`;
+    
+    modalContent.innerHTML = `
+        <button class="close-modal" id="closeModal">&times;</button>
+        <div class="modal-content">
+            <iframe 
+                src="${embedUrl}" 
+                title="${title}"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    `;
+    
+    // Ajouter l'event listener au nouveau bouton X
+    document.getElementById('closeModal').addEventListener('click', closeVideoModal);
+    
+    // Afficher le modal
+    modal.classList.add('active');
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    modal.classList.remove('active');
+    // Arrêter la vidéo en vidant le contenu
+    document.getElementById('modalContent').innerHTML = '';
+}
 
 // ==================== Affichage des Catégories ====================
 function displayCategories() {
@@ -50,15 +111,17 @@ function createTutorialCard(tutorial) {
     const card = document.createElement('div');
     card.className = 'tutorial-card';
     
-    // Générer l'URL YouTube
-    const youtubeUrl = `https://www.youtube.com/watch?v=${tutorial.youtubeId}`;
+    // Click sur la carte pour ouvrir le modal
+    card.addEventListener('click', () => {
+        openVideoModal(tutorial.youtubeId, tutorial.title);
+    });
     
     card.innerHTML = `
         <div class="tutorial-thumbnail">
             <img src="${tutorial.thumbnail}" alt="${tutorial.title}" loading="lazy">
-            <a href="${youtubeUrl}" target="_blank" class="play-button" title="Regarder sur YouTube">
+            <button class="play-button" title="Regarder le tutoriel">
                 ▶
-            </a>
+            </button>
         </div>
         <div class="tutorial-content">
             <span class="tutorial-category">${tutorial.category}</span>
@@ -66,7 +129,6 @@ function createTutorialCard(tutorial) {
             <p>${tutorial.description}</p>
             <div class="tutorial-footer">
                 <span class="tutorial-duration">⏱ ${tutorial.duration}</span>
-                <a href="${youtubeUrl}" target="_blank" class="tutorial-link">YouTube</a>
             </div>
         </div>
     `;
