@@ -51,10 +51,10 @@ body {
 
 /* ==================== Header - Amélioré ==================== */
 .header {
-    background: linear-gradient(135deg, var(--casa-gray) 0%, var(--casa-gray-light) 0%);
-    color: var(--grey);
+    background: linear-gradient(135deg, var(--casa-gray) 0%, var(--casa-gray-light) 100%);
+    color: var(--white);
     padding: 1rem 0;
-    box-shadow: var(--shadow-dark);
+    box-shadow: var(--shadow-clear);
     position: sticky;
     top: 0;
     z-index: 100;
