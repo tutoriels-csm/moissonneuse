@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f0f0ff"/>
+  
+  <!-- GPS/Navigation/Autopilot Icon -->
+  <g transform="translate(100, 100)">
+    <!-- Map background -->
+    <rect x="-45" y="-45" width="90" height="90" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="8"/>
+    
+    <!-- Road/Path -->
+    <path d="M -30 -35 Q -10 -20 0 0 Q 10 20 30 35" 
+          fill="none" stroke="#FFD700" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Road center line -->
+    <path d="M -30 -35 Q -10 -20 0 0 Q 10 20 30 35" 
+          fill="none" stroke="#FFF" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- GPS Satellites around -->
+    <circle cx="-50" cy="-50" r="5" fill="#2196F3"/>
+    <circle cx="50" cy="-50" r="5" fill="#2196F3"/>
+    <circle cx="50" cy="50" r="5" fill="#2196F3"/>
+    <circle cx="-50" cy="50" r="5" fill="#2196F3"/>
+    
+    <!-- Connection lines from center -->
+    <line x1="-35" y1="-35" x2="-12" y2="-12" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="35" y1="-35" x2="12" y2="-12" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="35" y1="35" x2="12" y2="12" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,3"/>
+    <line x1="-35" y1="35" x2="-12" y2="12" stroke="#2196F3" stroke-width="1" stroke-dasharray="3,3"/>
+    
+    <!-- Center GPS point (vehicle) -->
+    <circle cx="0" cy="0" r="8" fill="#FF6B35"/>
+    <circle cx="0" cy="0" r="5" fill="#FFF"/>
+    
+    <!-- Direction indicator (arrow pointing up) -->
+    <path d="M 0 -8 L -5 -2 L 5 -2 Z" fill="#FF6B35"/>
+  </g>
+</svg>
