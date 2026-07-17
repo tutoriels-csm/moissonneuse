@@ -54,35 +54,26 @@ const tutorials = [
     // === RÉGLAGES DE LA COUPE ===
     {
         id: 6,
-        title: "Création d'une Nouvelle Culture",
-        description: "Étapes pour créer et configurer une nouvelle campagne culturale.",
+        title: "Régler les positions CONTOUR et AUTO CONTOUR",
+        description: "Apprenez à régler correctement les positions CONTOUR et AUTO CONTOUR de votre moissonneuse.",
         category: "Réglages de la coupe",
-        youtubeId: "VOTRE_VIDEO_ID_6",
-        duration: "10:15",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_6/hqdefault.jpg"
+        youtubeId: "fSQoGX-LpnU",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/fSQoGX-LpnU/hqdefault.jpg"
     },
     {
         id: 7,
-        title: "Gestion des Parcelles",
-        description: "Découvrez comment gérer efficacement vos parcelles de terrain.",
+        title: "Régler le tablier VARIO",
+        description: "Découvrez comment régler le tablier VARIO pour optimiser votre récolte.",
         category: "Réglages de la coupe",
-        youtubeId: "VOTRE_VIDEO_ID_7",
-        duration: "11:20",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_7/hqdefault.jpg"
-    },
-    {
-        id: 8,
-        title: "Suivi des Rendements",
-        description: "Analysez et suivez vos rendements avec CEMOS.",
-        category: "Réglages de la coupe",
-        youtubeId: "VOTRE_VIDEO_ID_8",
-        duration: "13:50",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_8/hqdefault.jpg"
+        youtubeId: "sCuZ6YiILQc",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/sCuZ6YiILQc/hqdefault.jpg"
     },
 
     // === UTILISATION DES OUTILS D'ASSISTANCE À LA CONDUITE ===
     {
-        id: 9,
+        id: 8,
         title: "Optimisation de la Récolte",
         description: "Techniques pour optimiser vos opérations de récolte avec CEMOS.",
         category: "Utilisation des outils d'assistance à la conduite",
@@ -91,7 +82,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_9/hqdefault.jpg"
     },
     {
-        id: 10,
+        id: 9,
         title: "Analyse des Données de Performance",
         description: "Comment analyser et interpréter vos données de performance.",
         category: "Utilisation des outils d'assistance à la conduite",
@@ -100,7 +91,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_10/hqdefault.jpg"
     },
     {
-        id: 11,
+        id: 10,
         title: "Économies de Carburant et Consommation",
         description: "Stratégies pour réduire votre consommation de carburant.",
         category: "Utilisation des outils d'assistance à la conduite",
