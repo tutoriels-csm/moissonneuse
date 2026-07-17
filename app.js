@@ -2,7 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     displayCategories();
-    displayTutorials();
     setupModalHandler();
 });
 
@@ -140,9 +139,6 @@ function createTutorialCard(tutorial) {
 function filterByCategory(category) {
     const filtered = tutorials.filter(t => t.category === category);
     displayTutorials(filtered);
-    
-    // Scroll vers la section tutoriels
-    document.getElementById('tutoriels').scrollIntoView({ behavior: 'smooth' });
     
     // Afficher la catégorie sélectionnée
     const categoryTitle = document.querySelector('.section-title');
