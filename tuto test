@@ -1,0 +1,197 @@
+# Tutoriel d'utilisation
+
+## Présentation
+
+Ce tutoriel a pour objectif d'expliquer le fonctionnement et l'utilisation du projet.
+
+---
+
+# Sommaire
+
+1. Présentation
+2. Prérequis
+3. Installation
+4. Configuration
+5. Utilisation
+6. Dépannage
+7. Bonnes pratiques
+8. Support
+
+---
+
+# Prérequis
+
+Avant de commencer, vérifiez que vous disposez de :
+
+- Système d'exploitation compatible
+- Connexion Internet
+- Logiciel Git
+- Navigateur Web récent
+
+---
+
+# Installation
+
+## 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/Utilisateur/NomDuProjet.git
+```
+
+## 2. Accéder au dossier
+
+```bash
+cd NomDuProjet
+```
+
+## 3. Installer les dépendances
+
+Exemple :
+
+```bash
+npm install
+```
+
+ou
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+# Configuration
+
+Modifier les fichiers suivants si nécessaire :
+
+```
+config/
+.env
+settings.json
+```
+
+Renseigner les paramètres adaptés à votre environnement.
+
+---
+
+# Utilisation
+
+## Démarrage
+
+Exemple :
+
+```bash
+npm start
+```
+
+ou
+
+```bash
+python main.py
+```
+
+---
+
+## Fonctionnement
+
+Le programme réalise les opérations suivantes :
+
+1. Initialisation
+2. Vérification des paramètres
+3. Exécution
+4. Sauvegarde des résultats
+
+---
+
+# Arborescence
+
+```
+Projet/
+│
+├── README.md
+├── LICENSE
+├── docs/
+├── src/
+├── images/
+└── config/
+```
+
+---
+
+# Dépannage
+
+## Le programme ne démarre pas
+
+Vérifier :
+
+- les dépendances
+- la version de Git
+- la connexion réseau
+- les droits d'accès
+
+---
+
+## Erreur de configuration
+
+Contrôler :
+
+- les chemins
+- les fichiers de configuration
+- les variables d'environnement
+
+---
+
+# Bonnes pratiques
+
+- Mettre régulièrement le dépôt à jour.
+- Effectuer des sauvegardes.
+- Utiliser des branches Git pour les développements.
+- Documenter chaque modification importante.
+
+---
+
+# Contribution
+
+Les contributions sont les bienvenues.
+
+1. Fork du projet
+2. Création d'une branche
+3. Développement
+4. Commit
+5. Push
+6. Pull Request
+
+---
+
+# Licence
+
+Préciser ici la licence du projet.
+
+Exemple :
+
+MIT License
+
+---
+
+# Auteur
+
+Nom :
+Organisation :
+Version :
+Date :
+
+---
+
+# Historique
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | JJ/MM/AAAA | Première version |
+
+---
+
+# Support
+
+En cas de problème, ouvrir une *Issue* sur GitHub.
+
+Ajout du tutoriel
