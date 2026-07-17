@@ -14,6 +14,15 @@ const tutorials = [
     },
     {
         id: 2,
+        title: "Gestion des favoris",
+        description: "Découvrez comment gérer et organiser vos favoris dans CEMOS CLAAS.",
+        category: "Chargement produits, gestion des favoris",
+        youtubeId: "xUcrtv7DOtE",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/xUcrtv7DOtE/hqdefault.jpg"
+    },
+    {
+        id: 3,
         title: "Installation et Configuration de Base",
         description: "Guide complet pour installer et configurer CEMOS CLAAS pour la première fois.",
         category: "Chargement produits, gestion des favoris",
@@ -22,7 +31,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_1/hqdefault.jpg"
     },
     {
-        id: 3,
+        id: 4,
         title: "Connexion et Authentification",
         description: "Apprenez à vous connecter à CEMOS CLAAS avec votre compte utilisateur.",
         category: "Chargement produits, gestion des favoris",
@@ -33,7 +42,7 @@ const tutorials = [
 
     // === CALIBRATION DES CAPTEURS ===
     {
-        id: 4,
+        id: 5,
         title: "Enregistrement de Vos Machines",
         description: "Comment enregistrer et configurer vos machines CLAAS dans CEMOS.",
         category: "Calibration des capteurs",
@@ -42,7 +51,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_3/hqdefault.jpg"
     },
     {
-        id: 5,
+        id: 6,
         title: "Paramétrage des Capteurs",
         description: "Configuration détaillée des capteurs et de la télémétrie des machines.",
         category: "Calibration des capteurs",
@@ -51,7 +60,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_4/hqdefault.jpg"
     },
     {
-        id: 6,
+        id: 7,
         title: "Synchronisation des Données",
         description: "Synchronisez vos données entre la machine et la plateforme CEMOS.",
         category: "Calibration des capteurs",
@@ -62,7 +71,7 @@ const tutorials = [
 
     // === RÉGLAGES DE LA COUPE ===
     {
-        id: 7,
+        id: 8,
         title: "Création d'une Nouvelle Culture",
         description: "Étapes pour créer et configurer une nouvelle campagne culturale.",
         category: "Réglages de la coupe",
@@ -71,7 +80,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_6/hqdefault.jpg"
     },
     {
-        id: 8,
+        id: 9,
         title: "Gestion des Parcelles",
         description: "Découvrez comment gérer efficacement vos parcelles de terrain.",
         category: "Réglages de la coupe",
@@ -80,7 +89,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_7/hqdefault.jpg"
     },
     {
-        id: 9,
+        id: 10,
         title: "Suivi des Rendements",
         description: "Analysez et suivez vos rendements avec CEMOS.",
         category: "Réglages de la coupe",
@@ -91,7 +100,7 @@ const tutorials = [
 
     // === UTILISATION DES OUTILS D'ASSISTANCE À LA CONDUITE ===
     {
-        id: 10,
+        id: 11,
         title: "Optimisation de la Récolte",
         description: "Techniques pour optimiser vos opérations de récolte avec CEMOS.",
         category: "Utilisation des outils d'assistance à la conduite",
@@ -100,7 +109,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_9/hqdefault.jpg"
     },
     {
-        id: 11,
+        id: 12,
         title: "Analyse des Données de Performance",
         description: "Comment analyser et interpréter vos données de performance.",
         category: "Utilisation des outils d'assistance à la conduite",
@@ -109,7 +118,7 @@ const tutorials = [
         thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_10/hqdefault.jpg"
     },
     {
-        id: 12,
+        id: 13,
         title: "Économies de Carburant et Consommation",
         description: "Stratégies pour réduire votre consommation de carburant.",
         category: "Utilisation des outils d'assistance à la conduite",
