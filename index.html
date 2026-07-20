@@ -26,8 +26,25 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Slideshow -->
     <section id="accueil" class="hero">
+        <!-- Slideshow Container -->
+        <div class="slideshow-container">
+            <div class="slide fade" style="background-image: url('topic-8000-hrc-cemosautomatic.jpg')"></div>
+            <div class="slide fade" style="background-image: url('fond.jpg')"></div>
+            
+            <!-- Navigation arrows -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            
+            <!-- Dots for slide indicators -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+
+        <!-- Content overlay -->
         <div class="hero-content">
             <h2>Maîtrisez votre Moissonneuse CLAAS</h2>
             <p>Découvrez nos tutoriels vidéo complets pour optimiser votre expérience avec votre moissonneuse batteuse CLAAS</p>
@@ -96,5 +113,66 @@
 
     <script src="data.js"></script>
     <script src="app.js"></script>
+    <script>
+        let slideIndex = 1;
+        let slideTimer;
+
+        // Auto advance slides every 5 seconds
+        function autoSlides() {
+            slideIndex++;
+            if (slideIndex > document.querySelectorAll('.slide').length) {
+                slideIndex = 1;
+            }
+            showSlide(slideIndex);
+            slideTimer = setTimeout(autoSlides, 5000);
+        }
+
+        // Manual slide navigation
+        function changeSlide(n) {
+            clearTimeout(slideTimer);
+            slideIndex += n;
+            if (slideIndex > document.querySelectorAll('.slide').length) {
+                slideIndex = 1;
+            }
+            if (slideIndex < 1) {
+                slideIndex = document.querySelectorAll('.slide').length;
+            }
+            showSlide(slideIndex);
+            slideTimer = setTimeout(autoSlides, 5000);
+        }
+
+        // Go to specific slide
+        function currentSlide(n) {
+            clearTimeout(slideTimer);
+            slideIndex = n;
+            showSlide(slideIndex);
+            slideTimer = setTimeout(autoSlides, 5000);
+        }
+
+        // Display slide
+        function showSlide(n) {
+            let slides = document.querySelectorAll('.slide');
+            let dots = document.querySelectorAll('.dot');
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+
+            slides[slideIndex - 1].classList.add('active');
+            dots[slideIndex - 1].classList.add('active');
+        }
+
+        // Start slideshow on page load
+        window.addEventListener('load', () => {
+            showSlide(slideIndex);
+            autoSlides();
+        });
+    </script>
 </body>
 </html>
