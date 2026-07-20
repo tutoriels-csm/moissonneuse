@@ -15,7 +15,7 @@ const tutorials = [
     {
         id: 2,
         title: "Gestion des favoris",
-        description: "Découvrez comment gérer et organiser vos favoris dans CEMOS CLAAS.",
+        description: "Découvrez comment gérer et organiser vos favoris dans CEBIS.",
         category: "Chargement produits, gestion des favoris",
         youtubeId: "xUcrtv7DOtE",
         duration: "00:00",
