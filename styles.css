@@ -100,7 +100,7 @@ body {
 .logo-text .subtitle {
     font-size: 0.95rem;
     opacity: 0.9;
-    color: var(--claas-green);
+    color: #000000;
     font-weight: 600;
     letter-spacing: 0.3px;
     margin-top: 0;
