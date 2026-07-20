@@ -98,6 +98,26 @@ const tutorials = [
         youtubeId: "ahPUQ3MBD8I",
         duration: "00:00",
         thumbnail: "https://img.youtube.com/vi/ahPUQ3MBD8I/hqdefault.jpg"
+    },
+
+    // === CEMOS ===
+    {
+        id: 11,
+        title: "Introduction à CEMOS",
+        description: "Découvrez le système CEMOS et ses fonctionnalités d'automatisation avancée.",
+        category: "CEMOS",
+        youtubeId: "sZq71o275TM",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/sZq71o275TM/hqdefault.jpg"
+    },
+    {
+        id: 12,
+        title: "Configuration de CEMOS",
+        description: "Apprenez à configurer et personnaliser CEMOS selon vos besoins.",
+        category: "CEMOS",
+        youtubeId: "ahPUQ3MBD8I",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/ahPUQ3MBD8I/hqdefault.jpg"
     }
 ];
 
@@ -124,5 +144,6 @@ const tutorials = [
 //    - Calibration des capteurs
 //    - Réglages de la coupe
 //    - Utilisation des outils d'assistance à la conduite
+//    - CEMOS
 //
 // 4. Enregistrez et rechargez la page pour voir vos changements !
