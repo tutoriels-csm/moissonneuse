@@ -118,6 +118,7 @@ body {
     list-style: none;
     gap: 2rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav a {
@@ -173,6 +174,32 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(127, 187, 0, 0.4);
     color: var(--white) !important;
+}
+
+/* Bouton CEMIS 1200 */
+.btn-cemis {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-yellow-green), var(--accent-yellow-green-dark));
+    color: var(--casa-gray) !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(204, 255, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-cemis::after {
+    display: none;
+}
+
+.btn-cemis:hover {
+    background: linear-gradient(135deg, var(--accent-yellow-green-dark), var(--accent-yellow-green));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(204, 255, 0, 0.4);
+    color: var(--casa-gray) !important;
 }
 
 /* ==================== Hero Section with Slideshow ==================== */
@@ -784,7 +811,8 @@ body {
         justify-content: center;
     }
 
-    .btn-tracteurs {
+    .btn-tracteurs,
+    .btn-cemis {
         padding: 6px 12px;
         font-size: 0.8rem;
     }
@@ -852,7 +880,8 @@ body {
         font-size: 0.8rem;
     }
 
-    .btn-tracteurs {
+    .btn-tracteurs,
+    .btn-cemis {
         padding: 5px 10px;
         font-size: 0.75rem;
     }
