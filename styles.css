@@ -129,6 +129,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     padding: 0.5rem 0;
+    text-align: center;
 }
 
 .nav a::after {
@@ -163,6 +164,8 @@ body {
     letter-spacing: 0.5px;
     box-shadow: 0 4px 12px rgba(127, 187, 0, 0.3);
     transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .btn-tracteurs::after {
@@ -189,6 +192,9 @@ body {
     letter-spacing: 0.5px;
     box-shadow: 0 4px 12px rgba(204, 255, 0, 0.3);
     transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+    border: 2px solid var(--casa-gray);
 }
 
 .btn-cemis::after {
@@ -200,6 +206,7 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(204, 255, 0, 0.4);
     color: var(--casa-gray) !important;
+    border-color: var(--claas-green);
 }
 
 /* ==================== Hero Section with Slideshow ==================== */
