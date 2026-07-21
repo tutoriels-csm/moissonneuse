@@ -117,6 +117,7 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav a {
@@ -146,6 +147,32 @@ body {
 
 .nav a:hover::after {
     width: 100%;
+}
+
+/* Bouton Tutoriels tracteurs */
+.btn-tracteurs {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--claas-green), var(--claas-green-dark));
+    color: var(--white) !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(127, 187, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-tracteurs::after {
+    display: none;
+}
+
+.btn-tracteurs:hover {
+    background: linear-gradient(135deg, var(--claas-green-dark), var(--claas-green));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(127, 187, 0, 0.4);
+    color: var(--white) !important;
 }
 
 /* ==================== Hero Section with Slideshow ==================== */
@@ -757,6 +784,11 @@ body {
         justify-content: center;
     }
 
+    .btn-tracteurs {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
     .hero {
         padding: 80px 20px;
         min-height: 500px;
@@ -818,6 +850,11 @@ body {
     .nav ul {
         gap: 0.8rem;
         font-size: 0.8rem;
+    }
+
+    .btn-tracteurs {
+        padding: 5px 10px;
+        font-size: 0.75rem;
     }
 
     .hero {
